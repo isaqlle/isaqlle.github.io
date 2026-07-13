@@ -128,26 +128,13 @@ p {
 }
 
 .timeline-item {
-    display: grid;
-    grid-template-columns: 1.2fr 0.8fr;
-    gap: 20px;
-    align-items: center;
+    display: block;
+    width: 100%;
     padding: 18px;
     background: rgba(255, 255, 255, 0.03);
     border: 1px solid rgba(255, 255, 255, 0.08);
     border-radius: 14px;
-}
-
-.timeline-item--reverse {
-    grid-template-columns: 0.8fr 1.2fr;
-}
-
-.timeline-item--reverse .timeline-text {
-    order: 2;
-}
-
-.timeline-item--reverse .timeline-media {
-    order: 1;
+    box-sizing: border-box;
 }
 
 .timeline-year {

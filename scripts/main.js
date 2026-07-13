@@ -8,23 +8,23 @@ const pageConfig = {
     about: {
         title: 'Sobre mim | Isaque Pontes Romualdo',
         heading: 'Sobre mim',
-        intro: 'Abaixo, apresento a minha trajetória pessoal, acadêmica e profissional em ordem cronológica.',
+        intro: 'Abaixo, apresento a minha trajetória pessoal, acadêmica e profissional.',
         timeline: [{
-                year: '2005',
+                year: '17/03/2004',
                 title: 'Nascimento',
-                text: 'Início da minha jornada. (Espaço reservado para adicionar mais detalhes da sua infância/juventude).',
+                text: 'Nasci em Ceilandia - DF, Brasil. ',
                 image: 'images/profile-placeholder.svg',
                 alt: 'Espaço reservado para foto do marco'
             },
             {
-                year: '[Ano]',
+                year: '2019 - 2022',
                 title: 'Técnico em Administração',
-                text: 'Conclusão da formação técnica em Administração. (Preencha com detalhes sobre a instituição e a experiência).',
+                text: 'Ensino médio técnico concluído no Instituto Federal de Educação, Ciência e Tecnologia Goiano - Campus Campos Belos, com habilitação em Técnico em Administração.',
                 image: 'images/profile-placeholder.svg',
                 alt: 'Espaço reservado para foto do marco'
             },
             {
-                year: '2025 - 2026',
+                year: '2022 - 2025',
                 title: 'Bacharelado em Sistemas de Informação',
                 text: 'Conclusão do curso de Bacharelado. Durante este período, desenvolvi e realizei a defesa do meu Trabalho de Conclusão de Curso intitulado "C2Digital".',
                 image: 'images/profile-placeholder.svg',
@@ -84,14 +84,11 @@ function renderPage() {
 
     if (pageName === 'about') {
         const timelineMarkup = config.timeline.map((item, index) => `
-      <article class="timeline-item ${index % 2 === 1 ? 'timeline-item--reverse' : ''}">
+      <article class="timeline-item">
         <div class="timeline-text">
           <span class="timeline-year">${item.year}</span>
           <h2>${item.title}</h2>
           <p>${item.text}</p>
-        </div>
-        <div class="timeline-media">
-          <img src="${item.image}" alt="${item.alt}">
         </div>
       </article>
     `).join('');
