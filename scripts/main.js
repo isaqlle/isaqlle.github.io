@@ -2,8 +2,8 @@ const pageConfig = {
     home: {
         title: 'Início | Isaque Pontes Romualdo',
         heading: 'Isaque Pontes Romualdo',
-        subtitle: 'Instrutor de Informática | SENAI',
-        intro: 'Conheça um pouco mais sobre mim e entre em contato para conversar.'
+        subtitle: 'Instrutor de Informática <br> SENAI',
+        intro: '<br> Conheça um pouco mais sobre mim e entre em contato para conversar. <br> Pagina em desenvolvimento.'
     },
     about: {
         title: 'Sobre mim | Isaque Pontes Romualdo',
@@ -72,7 +72,7 @@ function renderPage() {
         main.innerHTML = `
       <div class="container">
         <div class="photo-frame">
-          <img src="images/profile-placeholder.svg" alt="Foto de perfil">
+          <img src="images/profile-placeholder.jpeg" alt="Foto de perfil">
         </div>
         <h1>${config.heading}</h1>
         <p>${config.subtitle}</p>
